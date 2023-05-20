@@ -44,7 +44,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Asap, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -422,6 +422,24 @@ video {
   display: none;
 }
 
+@font-face {
+  font-family: 'Asap';
+
+  src: url("/fonts/Asap-VariableFont_wdth,wght.ttf");
+}
+
+@font-face {
+  font-family: "Asap";
+
+  src: url("/fonts/Asap-Italic-VariableFont_wdth,wght.ttf");
+
+  font-style: italic, oblique;
+}
+
+html {
+  font-family: Asap, system-ui, sans-serif;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -522,15 +540,15 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.p-8 {
+  padding: 2rem;
 }
 
-.font-bold {
-  font-weight: 700;
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
 }
 
-.underline {
-  text-decoration-line: underline;
+.italic {
+  font-style: italic;
 }

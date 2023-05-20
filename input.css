@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Asap';
+        src: url("/fonts/Asap-VariableFont_wdth,wght.ttf");
+    }
+
+    @font-face {
+        font-family: "Asap";
+        src: url("/fonts/Asap-Italic-VariableFont_wdth,wght.ttf");
+        font-style: italic, oblique;
+    }
+
+    html {
+        font-family: Asap, system-ui, sans-serif;
+    }
+}
