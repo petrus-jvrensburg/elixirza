@@ -561,6 +561,10 @@ html {
   max-width: 64rem;
 }
 
+.max-w-sm {
+  max-width: 24rem;
+}
+
 .list-inside {
   list-style-position: inside;
 }
