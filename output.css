@@ -549,8 +549,24 @@ html {
   margin-bottom: 2rem;
 }
 
+.mr-0 {
+  margin-right: 0px;
+}
+
+.mr-0\.5 {
+  margin-right: 0.125rem;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
 .aspect-video {
   aspect-ratio: 16 / 9;
+}
+
+.h-16 {
+  height: 4rem;
 }
 
 .w-full {
@@ -594,6 +610,11 @@ html {
 .bg-gray-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
+.bg-pink-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 168 212 / var(--tw-bg-opacity));
 }
 
 .px-2 {
