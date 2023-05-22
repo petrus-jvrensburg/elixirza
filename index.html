@@ -563,70 +563,112 @@
             BEAM.
         </p>
 
-        <h3 class="text-xl pt-2">The Essentials</h3>
+        <h3 class="text-xl pt-8">Part 1: The Essentials</h3>
         <p class="text-justify pb-3">Why are we even here?</p>
 
         <ul class="list-inside flex flex-col space-y-4">
             <li>
-                Sasa Juric • The Soul of Erlang and Elixir<br />
-                <iframe class="w-full aspect-video md:px-8" src="https://www.youtube.com/embed/JvBT4XBdoUE"></iframe>
+                <h4 class="text-lg pt-4">Saša Jurić • The Soul of Erlang and Elixir</h4>
+                <p class="pb-2">
+                    In this seminal talk from 2019, Saša Jurić demonstrates in a practical way how message-passing
+                    concurrency allows us to build rock-solid fault-tolerant systems, that can handle errors and crashes
+                    that would have been very difficult, or impossible, to pre-empt in most other programming languages.
+                </p>
                 <a class="text-violet-600 hover:text-violet-700 cursor:pointer"
                     href="https://www.youtube.com/watch?v=JvBT4XBdoUE"
                     target="_blank">https://www.youtube.com/watch?v=JvBT4XBdoUE</a>
-
+                <iframe class="w-full aspect-video md:px-2 pt-2"
+                    src="https://www.youtube.com/embed/JvBT4XBdoUE"></iframe>
             </li>
             <li>
-                Elixir: The Documentary<br />
-                <iframe class="w-full aspect-video md:px-8" src="https://www.youtube.com/embed/lxYFOM3UJzo"></iframe>
+                <h4 class="text-lg pt-4">Elixir: The Documentary</h4>
+                <p class="pb-2">
+                    José Valim explains what initially brought him to create Elixir on top of the Erlang Virtaul Machine
+                    (the BEAM), which he started working on in 2012. He shows how it can be used to create a
+                    fault-tolerant, distributed systems, without much of the complexity that one might have expected.
+                </p>
                 <a class="text-violet-600 hover:text-violet-700 cursor:pointer"
                     href="https://www.youtube.com/watch?v=lxYFOM3UJzo"
                     target="_blank">https://www.youtube.com/watch?v=lxYFOM3UJzo</a>
-
+                <iframe class="w-full aspect-video md:px-2 pt-2"
+                    src="https://www.youtube.com/embed/lxYFOM3UJzo"></iframe>
             </li>
             <li>
-                Erlang: The Movie<br />
-                <iframe class="w-full aspect-video md:px-8" src="https://www.youtube.com/embed/xrIjfIjssLE"></iframe>
+                <h4 class="text-lg pt-4">Erlang: The Movie</h4>
+                <p class="pb-2">
+                    This vintage promotional video, from the 1980's, from Ericsson's Computer Science Laboratory,
+                    introduces Erlang for
+                    the first time. Joe Armstrong, Mike Williams and Robert Virding demonstrates its use for routing
+                    landline phone calls and handling the errors that may be expected to occur.
+                </p>
                 <a class="text-violet-600 hover:text-violet-700 cursor:pointer"
                     href="https://www.youtube.com/watch?v=xrIjfIjssLE"
                     target="_blank">https://www.youtube.com/watch?v=xrIjfIjssLE</a>
-
+                <iframe class="w-full aspect-video md:px-2 pt-2"
+                    src="https://www.youtube.com/embed/xrIjfIjssLE"></iframe>
             </li>
         </ul>
 
-        <h3 class="text-xl pt-2">Deeper cuts</h3>
+        <h3 class="text-xl pt-8">Part 2: Deeper cuts</h3>
         <p class="text-justify pb-3">Take your time to geek out on some of the finer implications of message-passing
             concurrency.</p>
 
         <ul class="list-inside flex flex-col space-y-4">
             <li>
-                Francesco Cesarini • Erlang Programming Language<br />
-                <iframe class="w-full aspect-video md:px-8" src="https://www.youtube.com/embed/SOqQVoVai6s"></iframe>
+                <h4 class="text-lg pt-4">Francesco Cesarini • Erlang Programming Language</h4>
+                <p class="pb-2">
+                    In this short & approachable talk Francesco gives an eloquent overview of the history and core ideas
+                    behind the development of Erlang.
+                </p>
                 <a class="text-violet-600 hover:text-violet-700 cursor:pointer"
                     href="https://www.youtube.com/watch?v=SOqQVoVai6s"
                     target="_blank">https://www.youtube.com/watch?v=SOqQVoVai6s</a>
+
+                <iframe class="w-full aspect-video md:px-2 pt-2"
+                    src="https://www.youtube.com/embed/SOqQVoVai6s"></iframe>
             </li>
             <li>
-                Joe Armstrong • The Do's and Don'ts of Error Handling<br />
-                <iframe class="w-full aspect-video md:px-8" src="https://www.youtube.com/embed/TTM_b7EJg5E"></iframe>
-                <a class="text-violet-600 hover:text-violet-700 cursor:pointer"
+                <h4 class="text-lg pt-4">Joe Armstrong • The Do's and Don'ts of Error Handling</h4>
+                <p class="pb-2">
+                    In this classic talk from 2018, Joe Armstrong discusses the problem of writing fault tolerant
+                    software, giving a short overview of his own involvement in writing Erlang. He discusses the
+                    implications of message-passing concurrency and the elegant architectural design solution of just
+                    letting things crash (when they are running in independent processes) to make it easy to reason
+                    about errors and their implications in our code.
+                </p>
+                <a class="my-2 text-violet-600 hover:text-violet-700 cursor:pointer"
                     href="https://www.youtube.com/watch?v=TTM_b7EJg5E"
                     target="_blank">https://www.youtube.com/watch?v=TTM_b7EJg5E</a>
+                <iframe class="w-full aspect-video md:px-2 pt-2"
+                    src="https://www.youtube.com/embed/TTM_b7EJg5E"></iframe>
             </li>
             <li>
-                Joe Armstrong's PhD thesis:<br />
+                <h4 class="text-lg pt-4">Joe Armstrong's PhD thesis</h4>
+                <p class="pb-2">
+                    Written late in his career, this 2003 thesis can be seen as Joe Armstrong's treatise on the problem
+                    of Fault-tolerant Computing. Joe discusses goes to great lengths to
+                    discuss the historical context within which Erlang originated, the architectural philosophy behind
+                    it, as well as the nut-and-bolts details of the resulting implementation.
+                </p>
                 <a class="text-violet-600 hover:text-violet-700 cursor:pointer"
                     href="https://erlang.org/download/armstrong_thesis_2003.pdf" target="_blank"
                     title="Making reliable distributed systems in the presence of software errors">
+                    https://erlang.org/download/armstrong_thesis_2003.pdf<br />
                     <img class="mx-auto max-w-xs" src="/images/joe-armstrong-phd-cover.png"
-                        alt="Joe Armstrong • Making reliable distributed systems in the presence of software errors" /><br />
-                    https://erlang.org/download/armstrong_thesis_2003.pdf</a>
+                        alt="Joe Armstrong • Making reliable distributed systems in the presence of software errors" /></a>
             </li>
             <li>
-                Robert Virding • Hitchhiker's Tour of the BEAM<br />
-                <iframe class="w-full aspect-video md:px-8" src="https://www.youtube.com/embed/_Pwlvy3zz9M"></iframe>
-                <a class="text-violet-600 hover:text-violet-700 cursor:pointer"
+                <h4 class="text-lg pt-4">Robert Virding • Hitchhiker's Tour of the BEAM</h4>
+                <p class="pb-2">
+                    One of the creators of Erlang gives an easily digestible overview of the BEAM (the Erlang runtime),
+                    aimed at developers and system architects. He discusses the main features and highlights the most
+                    common pitfalls one can expect to encounter when running applications on the BEAM.
+                </p>
+                <a class="my-2 text-violet-600 hover:text-violet-700 cursor:pointer"
                     href="https://www.youtube.com/watch?v=_Pwlvy3zz9M"
                     target="_blank">https://www.youtube.com/watch?v=_Pwlvy3zz9M</a>
+                <iframe class="w-full aspect-video md:px-2 pt-2"
+                    src="https://www.youtube.com/embed/_Pwlvy3zz9M"></iframe>
             </li>
         </ul>
     </section>
