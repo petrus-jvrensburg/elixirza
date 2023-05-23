@@ -423,7 +423,7 @@ video {
 }
 
 @font-face {
-  font-family: 'Asap';
+  font-family: "Asap";
 
   src: url("/fonts/Asap-VariableFont_wdth,wght.ttf");
 }
@@ -433,7 +433,7 @@ video {
 
   src: url("/fonts/Asap-Italic-VariableFont_wdth,wght.ttf");
 
-  font-style: italic, oblique;
+  font-style: italic;
 }
 
 html {
@@ -576,6 +576,10 @@ html {
 
 .mt-1 {
   margin-top: 0.25rem;
+}
+
+.mt-24 {
+  margin-top: 6rem;
 }
 
 .inline-block {
@@ -745,6 +749,10 @@ html {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .leading-8 {
