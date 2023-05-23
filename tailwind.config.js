@@ -8,6 +8,9 @@ module.exports = {
       fontFamily: {
         'sans': ['Asap', ...defaultTheme.fontFamily.sans],
       },
+      colors: {
+        primary: "#3F0B59"
+      }
     },
   },
   plugins: [],
