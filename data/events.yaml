@@ -1,0 +1,225 @@
+# Past and upcoming ElixirZA events.
+# Add new past events at the top of `past`.
+# Set `upcoming` entries the same way; leave empty for the default message.
+
+upcoming: []
+
+past:
+  - title: "November Erlang & Elixir Meetup • Stephan Bothma & Dylan Blakemore"
+    date: "Tuesday, November 26, 2024 19:00 (GMT+2)"
+    url: "https://youtu.be/yKVN4_GK7sE"
+    image: "/images/speakers/thumbs/stephan-bothma_dylan-blakemore.png"
+    description: >-
+      Stephan Bothma walked us through a project at <a href="https://flickswitch.co.za" target="_blank" class="text-violet-600 hover:text-violet-700 cursor:pointer">Flickswitch</a> where he used GenServer to handle the provisioning and activation of SIM cards at scale across Africa.
+      Dylan Blakemore, Senior Engineering Manager at <a href="https://www.zappi.io" target="_blank" class="text-violet-600 hover:text-violet-700 cursor:pointer">Zappi</a>, shared his experience growing an Elixir team inside a company that started as a Ruby on Rails shop — covering the challenges and wins of convincing an organisation to adopt Elixir, and building up a team around it.
+    links:
+      - type: github
+        url: "https://github.com/DylanBlakemore"
+      - type: linkedin
+        url: "https://za.linkedin.com/in/stephan-bothma-37b5b5191"
+      - type: linkedin
+        url: "https://www.linkedin.com/in/dylan-blakemore-a9198a11b/"
+
+  - title: "July Erlang & Elixir Meetup • Boost Your Data Team's Productivity with Explorer"
+    date: "Tuesday, July 16, 2024 19:00 (GMT+2)"
+    url: "https://youtu.be/5N4qTX8JBek"
+    image: "/images/speakers/thumbs/christopher-grainger-elixirza.png"
+    description: >-
+      At <a href="https://www.amplified.ai" target="_blank" class="text-violet-600 hover:text-violet-700 cursor:pointer">https://www.amplified.ai</a>, Chirstopher Grainger has built powerful tools that help his customers (e.g. patent attorneys) make sense of millions of patent records, issued from all over the world, in very little time. Behind the scenes Amplified uses some cutting-edge functionality enabled by LLMs, together with a bunch of traditional machine learning techniques that do a lot of the heavy lifting.<br>
+      One piece of their stack that is easily overlooked, but surprisingly useful for working with large datasets, is <a href="https://github.com/elixir-explorer/explorer" target="_blank" class="text-violet-600 hover:text-violet-700 cursor:pointer">the Explorer library</a>, of which Chris is the author. In this talk, he gives a quick overview of what it does, and what makes it useful, before ripping out a livebook and showing us what it all looks like in practice.
+    links:
+      - type: x
+        url: "https://x.com/cigrainger"
+      - type: github
+        url: "https://github.com/cigrainger"
+      - type: linkedin
+        url: "https://www.linkedin.com/in/cigrainger/"
+
+  - title: "May Erlang & Elixir Meetup • Wayne Pringle-Wood & Danie Palm"
+    date: "Tuesday, May 21, 2024 19:00 (GMT+2)"
+    url: "https://youtu.be/d3UXIs6PFyU"
+    image: "/images/speakers/thumbs/wayne-pringle-wood_and_danie-palm_elixirza.png"
+    description: >-
+      Danie Palm showed us how he built a binary parser at <a href="https://www.lifeq.com" target="_blank" class="text-violet-600 hover:text-violet-700 cursor:pointer">LifeQ</a>, using Elixir's builtin binary matching features to come up with an elegant parsing function that handles dynamic content efficiently.
+      Wayne Pringle-Wood shared some of the challenges they faced at <a href="https://flickswitch.co.za" target="_blank" class="text-violet-600 hover:text-violet-700 cursor:pointer">Flickswitch</a> when scaling their GenServer-based architecture as their usage grew.
+    links:
+      - type: x
+        url: "https://x.com/pringlewood"
+      - type: github
+        url: "https://github.com/palm86"
+      - type: linkedin
+        url: "https://www.linkedin.com/in/wayne-pringle-wood-66204732/"
+      - type: linkedin
+        url: "https://www.linkedin.com/in/daniepalm/"
+
+  - title: "March Erlang & Elixir Meetup • RenoHash: Building a startup from scratch in Elixir & Phoenix"
+    date: "Tuesday, March 26, 2024 19:00 (GMT+2)"
+    url: "https://www.meetup.com/elixirza/events/299153319/"
+    image: "/images/speakers/thumbs/vusi-mosena_elixirza.png"
+    description: >-
+      Vusi Mosena, founder of <a href="https://renohash.co.za" target="_blank" class="text-violet-600 hover:text-violet-700 cursor:pointer">https://renohash.co.za</a> gave us some insight into his creative process, showing how he's been tackling the challenge of building a startup. With Renohash his approach has been to write as little code as possible: just enough to validate the approach taken for each step. The focus for him is really on building the business... get that right, and then the software will follow.
+    links:
+      - type: x
+        url: "https://x.com/wokeupthehouse"
+      - type: github
+        url: "https://github.com/zasource-dev"
+      - type: linkedin
+        url: "https://www.linkedin.com/in/vusi-m-7678a8b6/"
+
+  - title: "January Erlang & Elixir Meetup • TAMING THE BEAST: STRUCTURED OUTPUT FROM ERRATIC LLMS"
+    date: "Tuesday, January 30, 2024 19:00 (GMT+2)"
+    url: "https://www.meetup.com/elixirza/events/297977016/"
+    image: "/images/speakers/thumbs/thomas-millar_elixirza.png"
+    description: >-
+      Thomas Millar, the maintainer of <a href="https://github.com/thmsmlr/instructor_ex" target="_blank" class="text-violet-600 hover:text-violet-700 cursor:pointer">Elixir's Instructor library</a>, joined us for a fascinating chat about using 'structured prompting' to integrate LLMs into your Elixir applications. His library helps you get structured output from LLMs using a combination of 'function calling', Ecto changesets and good-old Ecto validation functions. This removes a bunch of complexity from your code, making it much easier to leverage the power of LLMs in your own applications.
+    links:
+      - type: x
+        url: "https://x.com/thmsmlr"
+      - type: linkedin
+        url: "https://www.linkedin.com/in/thmsmlr/"
+      - type: github
+        url: "https://github.com/thmsmlr"
+
+  - title: "December Erlang & Elixir Meetup • V&A Waterfront, Cape Town"
+    date: "Saturday, December 9, 2023 10:15 AM (GMT+2)"
+    url: "https://youtu.be/QLud-uivhkY"
+    image: "/images/speakers/thumbs/mark-levitt_elixirza.png"
+    youtube: "https://youtu.be/QLud-uivhkY"
+    description: >-
+      Mark Levitt shared some of the insights & war-stories that he's been collecting while building startups over the last couple of decades. He's been involved in several startup successes, including Yola.com, Clicks2Customers, ChessCube and gyft. Most recently he's been working on Trixta.ai, a platform for generating and maintaining software with the help of autonomous AI agents.
+    links:
+      - type: x
+        url: "https://x.com/MarkZLevitt"
+      - type: linkedin
+        url: "https://www.linkedin.com/in/marklevitt/"
+
+  - title: "October Erlang & Elixir Meetup • Lightning Talks"
+    date: "Tuesday, October 31, 2023 7:00 PM (GMT+2)"
+    url: "https://www.meetup.com/elixirza/events/290550744/"
+    description: >-
+      <a href="https://www.linkedin.com/in/ross-shardlow-34838a136/" target="_blank" class="text-violet-600 hover:text-violet-700 cursor:pointer">Ross Shardlow</a> shared a bit about his experience using credo for static code analysis. He has been using it at Slerp, where the Elixir team is distributed across diverse timezones. Credo runs in their CI/CD pipeline, checking for several issues out-of-the-box, but Ross showed how they went a step further and implemented a set of custom credo checks for things that are important to them. And surprisingly, it was a rather simple process, involving a callback function and some pattern matching on the parsed code that is being checked.<br>
+      <a href="https://www.linkedin.com/in/wkirschbaum/" target="_blank" class="text-violet-600 hover:text-violet-700 cursor:pointer">Wilhelm Kirschbaum</a> shared a bit about the Tree-sitter parsing library, and showed what parsed elixir code looks like. Lastly, <a href="https://www.linkedin.com/in/petrus-janse-van-rensburg-0517a7223/" target="_blank" class="text-violet-600 hover:text-violet-700 cursor:pointer">Petrus Janse van Rensburg</a> highlighted a couple of fantastic recent conference talks and showed how simple it can be to render live time-series plots in LiveView using plain SVG and Tailwind for styling.
+
+  - title: "September Erlang & Elixir Meetup • RAGE AGAINST THE MACHINE: NEURAL NETWORKS IN ELIXIR"
+    date: "Thursday, September 14, 2023 7:00 PM (GMT+2)"
+    url: "https://www.meetup.com/elixirza/events/290550739/"
+    image: "/images/speakers/thumbs/sean-moriarity_elixirza.png"
+    description: >-
+      Sean Moriarity joined us for a chat about all things Machine Learning in Elixir. He's the lead developer of Axon, a library for implementing Neural Nets on the BEAM, as well as being deeply involved in the development of Nx (Numerical Elixir), which Axon uses for number crunching.<br />
+      Recently, Sean released <a class="text-violet-600 hover:text-violet-700 cursor:pointer" href="https://pragprog.com/titles/smelixir/machine-learning-in-elixir/" target="_blank" title="Machine Learning in Elixir - Learning to Learn with Nx and Axon">a new book in Beta</a> on PragProg, so if this stuff interests you (and it should), then go grab yourself a copy.
+    links:
+      - type: x
+        url: "https://x.com/sean_moriarity"
+      - type: github
+        url: "https://github.com/seanmor5"
+
+  - title: "July Erlang & Elixir Meetup • HOW WE USE ELIXIR AT OPENFN"
+    date: "Tuesday, July 11, 2023 7:00 PM (GMT+2)"
+    url: "https://www.meetup.com/elixirza/events/290550712/"
+    image: "/images/speakers/thumbs/stuart-corbishley_elixirza.png"
+    description: >-
+      Stuart Corbishley spoke about some of the interesting projects he's been working on around the world, together with the <a class="text-violet-600 hover:text-violet-700 cursor:pointer" href="https://openfn.org" target="_blank" title="OpenFn">OpenFn.org</a> team. For the past eight years, they have been helping governments and NGOs integrate disparate software systems, using mostly Elixir (for orchestration) and Javascript (for running background jobs). They provide an accessible low-code solution for solving tech-related problems in the public sector, often in situations where a modest chunk of code can have an outsized impact on people's livelihood.
+    links:
+      - type: x
+        url: "https://x.com/stucorbishley"
+      - type: github
+        url: "https://github.com/stuartc"
+      - type: linkedin
+        url: "https://www.linkedin.com/in/stuartcorbishley/"
+
+  - title: "May Erlang & Elixir Meetup • BUILDING AI INTO YOUR ELIXIR APPLICATIONS"
+    date: "Tuesday, May 16, 2023 7:00 PM (GMT+2)"
+    url: "https://www.meetup.com/elixirza/events/290550709/"
+    image: "/images/speakers/thumbs/petrus-janse-van-rensburg_elixirza.png"
+    description: >-
+      Petrus Janse van Rensburg spoke about the current state of AI tools, and how to think about them in relation to what we've had before, e.g. Deep Learning, Machine Learning etc. He showed how he has used text generation at an e-commerce startup to generate marketing copy dynamically, and discussed the potential for using it in a few different parts of the UI to affirm a user's purchasing decisions and nudge them to continue further down the checkout funnel.
+    links:
+      - type: x
+        url: "https://x.com/petrusjvr"
+      - type: github
+        url: "https://github.com/petrus-jvrensburg"
+      - type: linkedin
+        url: "https://www.linkedin.com/in/petrus-janse-van-rensburg-0517a7223/"
+
+  - title: "March Erlang & Elixir Meetup • USING PHOENIX & LIVEVIEW FOR FUN AND PROFIT"
+    date: "Thursday, March 23, 2023 7:00 PM (GMT+2)"
+    url: "https://www.meetup.com/elixirza/events/290550674/"
+    image: "/images/speakers/thumbs/de-wet-blomerus_elixirza.png"
+    description: >-
+      De Wet Blomerus gave a demo of an internal tool that he built for his remote dev team at Salesloft.com, that uses LiveView in ways that would have been difficult to replicate with a different stack. He shared some insights on how he's been boosting his own career with Phoenix & LiveView, after starting out as a Ruby developer. And he gave plenty of advice for new graduates, embarking on their own careers.
+    links:
+      - type: github
+        url: "https://github.com/dewetblomerus"
+      - type: linkedin
+        url: "https://www.linkedin.com/in/dewetblomerus/"
+
+  - title: "January Erlang & Elixir Meetup"
+    date: "Tuesday, January 24, 2023 7:00 PM(GMT+2)"
+    url: "https://www.meetup.com/elixirza/events/290550646/"
+    description: >-
+      To kick-off 2023 we had a meet & greet event with a few lightning talks. Rowland shared about an Elixir library he had been working on for doing optimistic rendering of HTTP requests and Petrus showed how he's been using LiveView and Javascript to build an 'infinite scroll' feed for an e-commerce UI.
+
+  - title: "Erlang & Elixir Meetup • PHOENIX LIVEVIEW: MODERN WEB DEVELOPMENT WITHOUT THE AGONIZING PAIN"
+    date: "Tuesday, November 29, 2022 7:00 PM (GMT+2)"
+    url: "https://www.meetup.com/elixirza/events/289249328/"
+    image: "/images/speakers/thumbs/joão-ferreira_elixirza.png"
+    description: >-
+      João Ferreira gave a talk about LiveView, sharing insights from his background as a full-stack developer. He used to build applications using Node & various Javascript frameworks, like React, but currently he is working on the Elixir team at Fly.io, building a platform that lets you publish & host distributed applications with ease.
+    links:
+      - type: github
+        url: "https://github.com/lubien"
+      - type: linkedin
+        url: "https://www.linkedin.com/in/lubien/"
+
+  - title: "Erlang & Elixir Meetup • ARCHITECTURE: MONOLITHS & MICRO SERVICES IN PRACTICE"
+    date: "Tuesday, October 4, 2022 7:00 PM (GMT+2)"
+    url: "https://www.meetup.com/elixirza/events/288006100/"
+    image: "/images/speakers/thumbs/peter-ullrich_elixirza.png"
+    description: >-
+      Peter Ullrich shared some of his experience with building both Monoliths and Micro Service architectures in practice, drawign on previous experience at Jobvalley, a small startup and more recent experience at Remote.com which has a much larger codebase and enginerring team. He spoke a bit about what it is like building startups, writing books and travelling around Africa.
+    links:
+      - type: x
+        url: "https://x.com/pjullrich"
+      - type: github
+        url: "https://github.com/PJUllrich"
+      - type: linkedin
+        url: "https://www.linkedin.com/in/pjullrich/"
+
+  - title: "Erlang & Elixir Meetup • Going international - using Unicode's CLDR Project to localise your software"
+    date: "Tuesday, June 28, 2022 7:00 PM (GMT+2)"
+    url: "https://www.meetup.com/elixirza/events/286687813/"
+    description: >-
+      Petrus Janse van Rensburg showed how you can go beyond Gettext, to localise dynamic content in your application with the help of the Unicode consortium's Common Locale Data Repository project, and the suite of ex_cldr Elixir libraries that makes it accessible.
+    links:
+      - type: x
+        url: "https://x.com/petrusjvr"
+      - type: github
+        url: "https://github.com/petrus-jvrensburg"
+      - type: linkedin
+        url: "https://www.linkedin.com/in/petrus-janse-van-rensburg-0517a7223/"
+
+  - title: "Erlang & Elixir Meetup • How we are using Elixir at Floatpays"
+    date: "Tuesday, September 14, 2021 7:00 PM (GMT+2)"
+    url: "https://www.meetup.com/elixirza/events/280440601/"
+    description: >-
+      Wilhelm Kirschbaum showed how they are using Elixir and Phoenix at Floatpays and explained why they made this a part of their tech stack.
+    links:
+      - type: x
+        url: "https://x.com/wkirschbaum"
+      - type: github
+        url: "https://github.com/wkirschbaum"
+      - type: linkedin
+        url: "https://www.linkedin.com/in/wkirschbaum/"
+
+  - title: "ElixirZA meetup kickoff with Ben Mmari"
+    date: "Tuesday, August 10, 2021 7:00 PM (GMT+2)"
+    url: "https://www.meetup.com/elixirza/events/279468120/"
+    description: >-
+      Ben Mmari shared his experience building out a public facing API in Elixir at Zappi. He discussed why he opted for Elixir, the challenges he faced and the learnings made while making the jump from Ruby to Elixir.
+    links:
+      - type: x
+        url: "https://x.com/BenMmari"
+      - type: github
+        url: "https://github.com/benmmari"
+      - type: linkedin
+        url: "https://www.linkedin.com/in/benmmari/"

@@ -1,0 +1,14 @@
+{{- if . -}}
+<ul role="list" class="mt-1 flex gap-x-4">
+    {{- range . -}}
+    {{- $labels := dict "x" "X" "github" "GitHub" "linkedin" "LinkedIn" -}}
+    {{- $label := index $labels .type | default (.type | title) -}}
+    <li>
+        <a href="{{ .url }}" target="_blank" class="text-slate-700 hover:text-slate-900">
+            <span class="sr-only">{{ $label }}</span>
+            {{ partial (printf "icons/%s.html" .type) . }}
+        </a>
+    </li>
+    {{- end -}}
+</ul>
+{{- end -}}
