@@ -1,0 +1,13 @@
+{
+  "name": "elixirza",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i ./assets/css/input.css -o ./static/css/output.css --minify",
+    "dev:css": "tailwindcss -i ./assets/css/input.css -o ./static/css/output.css --watch",
+    "build": "npm run build:css && hugo --minify",
+    "dev": "npm run build:css && hugo server -D"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}

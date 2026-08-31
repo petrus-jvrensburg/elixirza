@@ -1,0 +1,30 @@
+baseURL = "https://elixirza.org/"
+title = "ElixirZA • Erlang & Elixir User Group"
+
+disableKinds = ["taxonomy", "term", "RSS", "sitemap"]
+
+[languages.en]
+label = "English"
+weight = 1
+
+[params]
+  description = "A community of Erlang & Elixir enthusiasts from South Africa and the broader African continent."
+  github = "https://github.com/petrus-jvrensburg/elixirza"
+
+[params.organization]
+  name = "ElixirZA • Erlang & Elixir User Group"
+  logo = "https://elixirza.org/images/elixirza-logo.png"
+  addressLocality = "Cape Town"
+  addressCountry = "ZA"
+  postalCode = "8000"
+  streetAddress = "32 Kloof St"
+  sameAs = [
+    "https://www.linkedin.com/company/elixirza-•-erlang-elixir-user-group/",
+    "https://www.youtube.com/@ElixirZA-UserGroup",
+    "https://zatech.slack.com/archives/C07BD4UT0",
+  ]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

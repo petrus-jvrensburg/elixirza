@@ -2,18 +2,57 @@
 
 [https://elixirza.org](https://elixirza.org)
 
-This is a static webpage, hosted on [GitHub pages](https://pages.github.com).
+A static site built with [Hugo](https://gohugo.io) and [Tailwind CSS](https://tailwindcss.com), hosted on [GitHub Pages](https://pages.github.com).
 
-Run this locally using Python's builtin HTTP server:
+## Prerequisites
+
+- [Hugo](https://gohugo.io/installation/) (extended edition)
+- [Node.js](https://nodejs.org/) (for Tailwind CSS)
+
+## Local development
+
+Install dependencies:
 
 ```
-python -m http.server 9000
+npm install
 ```
 
-You should see the page at [http://localhost:9000](http://localhost:9000).
-
-CSS is compiled using Tailwind CLI. See here for installation instructions.
+Start the Hugo dev server (rebuild CSS first, then serve with live reload):
 
 ```
-npx tailwindcss -i ./input.css -o ./output.css --watch
+npm run dev
 ```
+
+The site will be available at [http://localhost:1313](http://localhost:1313).
+
+To watch Tailwind CSS changes separately in another terminal:
+
+```
+npm run dev:css
+```
+
+## Building for production
+
+```
+npm run build
+```
+
+Output is written to `public/`.
+
+## Deployment
+
+The site is deployed automatically via GitHub Actions when changes are pushed to `main`. Ensure GitHub Pages is configured to use **GitHub Actions** as the source (Settings → Pages → Build and deployment → Source: GitHub Actions).
+
+## Project structure
+
+```
+assets/css/     Tailwind input stylesheet
+content/        Hugo content (homepage)
+layouts/        Hugo templates and partials
+static/         Static assets (images, fonts, favicons, CNAME)
+hugo.toml       Hugo site configuration
+```
+
+## Adding a past event
+
+Past events are currently defined in `layouts/partials/home-content.html`. Edit the `#past-events` section to add a new entry.
