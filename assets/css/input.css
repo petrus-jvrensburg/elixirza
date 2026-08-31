@@ -6,15 +6,71 @@
     @font-face {
         font-family: "Asap";
         src: url("/fonts/Asap-VariableFont_wdth,wght.ttf");
+        font-weight: 100 900;
+        font-display: swap;
     }
 
     @font-face {
         font-family: "Asap";
         src: url("/fonts/Asap-Italic-VariableFont_wdth,wght.ttf");
         font-style: italic;
+        font-weight: 100 900;
+        font-display: swap;
     }
 
     html {
         font-family: Asap, system-ui, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+        @apply text-base leading-relaxed text-gray-800;
+    }
+}
+
+@layer components {
+    .link {
+        @apply text-violet-700 underline-offset-2 transition-colors hover:text-violet-900 hover:underline;
+    }
+
+    .section {
+        @apply border-t border-gray-200 py-12;
+    }
+
+    .section-title {
+        @apply pb-4 text-3xl font-semibold tracking-tight text-primary italic;
+    }
+
+    .section-lead {
+        @apply mb-6 text-lg leading-relaxed text-gray-600;
+    }
+
+    .prose-p {
+        @apply mb-4 leading-relaxed text-gray-800;
+    }
+
+    .prose-list {
+        @apply my-4 list-disc space-y-2 pl-5 marker:text-gray-400;
+    }
+
+    .subsection-title {
+        @apply pb-2 pt-10 text-xl font-semibold tracking-tight text-primary;
+    }
+
+    .resource-title {
+        @apply text-lg font-semibold leading-snug text-gray-900;
+    }
+
+    .meta {
+        @apply text-sm leading-normal text-gray-500;
+    }
+
+    .event-title {
+        @apply text-lg font-semibold leading-snug text-violet-700 transition-colors hover:text-violet-900 hover:underline;
+    }
+
+    .rich-text a {
+        @apply text-violet-700 underline-offset-2 transition-colors hover:text-violet-900 hover:underline;
     }
 }

@@ -1,22 +1,22 @@
 {{- $event := . -}}
 <li>
     {{- if $event.image -}}
-    <div class="inline md:flex md:space-x-4 md:items-center">
-        <div class="mb-4 md:flex-shrink-0 md:mb-0 md:mr-4">
-            <a class="cursor:pointer h-32 w-full md:w-36" href="{{ $event.url }}" target="_blank" title="{{ $event.title }}">
-                <img class="mx-auto max-w-xs md:max-w-sm md:px-2 pt-2 border border-gray-300"
+    <div class="flex flex-col gap-4 sm:flex-row sm:items-start sm:gap-5">
+        <div class="w-full shrink-0 sm:w-64 md:w-72">
+            <a class="block" href="{{ $event.url }}" target="_blank" title="{{ $event.title }}">
+                <img class="w-full border border-gray-300"
                     src="{{ $event.image | relURL }}"
                     alt="{{ $event.title }}" />
             </a>
         </div>
-        <div>
-            <a class="text-violet-600 hover:text-violet-700 cursor:pointer"
+        <div class="min-w-0 flex-1">
+            <a class="event-title text-base"
                 href="{{ $event.url }}" target="_blank" title="{{ $event.title }}">{{ $event.title }}</a><br />
-            {{ $event.date }}<br />
-            {{ $event.description | safeHTML }}
+            <span class="meta">{{ $event.date }}</span><br />
+            <span class="rich-text">{{ $event.description | safeHTML }}</span>
             {{- if $event.youtube -}}
             <br>
-            <a class="text-violet-600 hover:text-violet-700 cursor:pointer"
+            <a class="link"
                 href="{{ $event.youtube }}" target="_blank">Watch on YouTube</a>.
             {{- end -}}
             {{- if $event.links -}}
@@ -26,13 +26,13 @@
         </div>
     </div>
     {{- else -}}
-    <a class="text-violet-600 hover:text-violet-700 cursor:pointer"
+    <a class="event-title text-base"
         href="{{ $event.url }}" target="_blank" title="{{ $event.title }}">{{ $event.title }}</a><br />
-    {{ $event.date }}<br />
-    {{ $event.description | safeHTML }}
+    <span class="meta">{{ $event.date }}</span><br />
+    <span class="rich-text">{{ $event.description | safeHTML }}</span>
     {{- if $event.youtube -}}
     <br>
-    <a class="text-violet-600 hover:text-violet-700 cursor:pointer"
+    <a class="link"
         href="{{ $event.youtube }}" target="_blank">Watch on YouTube</a>.
     {{- end -}}
     {{- if $event.links -}}

@@ -1,31 +1,33 @@
     <!-- Main Content -->
-    <h1 class="text-7xl pb-10 italic text-primary">
-        <img class="inline-block h-16 pb-2 mr-0.5" src="/images/elixir-lang-logo.png" alt="elixir logo">ElixirZA
-    </h1>
-    <p class="text-lg text-justify">
-        A community of Erlang & Elixir enthusiasts from South Africa 🇿🇦 and the broader African continent 🌍.
-    </p>
+    <header class="pb-10">
+        <h1 class="text-5xl sm:text-6xl md:text-7xl italic text-primary leading-none tracking-tight">
+            <img class="inline-block h-12 sm:h-14 md:h-16 pb-1.5 mr-0.5 align-baseline" src="/images/elixir-lang-logo.png" alt="">ElixirZA
+        </h1>
+        <p class="section-lead mt-6 mb-0 max-w-2xl">
+            A community of Erlang &amp; Elixir enthusiasts from South Africa 🇿🇦 and the broader African continent 🌍.
+        </p>
+    </header>
 
-    <section id="what-is-elixir" class="py-6">
-        <h2 class="text-2xl pb-2 italic">
+    <section id="what-is-elixir" class="pb-12">
+        <h2 class="section-title border-0 pb-4">
             What is Elixir?
         </h2>
 
-        <p class="text-justify pt-2 pb-1">
+        <p class="prose-p">
             Elixir is a programming language that runs on the Erlang runtime (also known as BEAM / OTP). It is not the
             oldest BEAM language (that would be Erlang), neither is it the youngest (<a
-                class="text-violet-600 hover:text-violet-700 cursor:pointer"
+                class="link"
                 href="https://github.com/llaisdy/beam_languages" target="_blank" title="Languages on the BEAM">there are
                 several</a>), but it is the most
             fun to work with.
         </p>
 
-        <p class="text-justify pt-2 pb-1">
+        <p class="prose-p mb-0">
             Elixir is used in production in large software systems, e.g. <a
-                class="text-violet-600 hover:text-violet-700 cursor:pointer"
+                class="link"
                 href="https://elixir-lang.org/blog/2020/10/08/real-time-communication-at-scale-with-elixir-at-discord/"
                 title="Real time communication at scale with Elixir at Discord" target="_blank">Discord</a>. And the
-            underlying <a class="text-violet-600 hover:text-violet-700 cursor:pointer"
+            underlying <a class="link"
                 href="https://www.youtube.com/watch?v=c12cYAUTXXs" target="_blank"
                 title="Rick Reed • That's 'Billion' with a 'B': Scaling to the Next Level at WhatsApp">Erlang runtime
                 powers
@@ -34,162 +36,149 @@
         </p>
     </section>
 
-    <section id="past-events" class="py-6 border-t border-gray-300">
-        <h2 class="text-2xl pb-2 italic">Past events</h2>
-        <ul class="list-inside flex flex-col space-y-4">
+    <section id="past-events" class="section">
+        <h2 class="section-title">Past events</h2>
+        <ul class="flex flex-col space-y-4">
             {{- range hugo.Data.events.past }}
             {{ partial "event.html" . }}
             {{- end }}
         </ul>
     </section>
 
-    <section id="why-elixir" class="py-6 border-t border-gray-300">
-        <h2 class="text-2xl pb-2 italic">
+    <section id="why-elixir" class="section">
+        <h2 class="section-title">
             Why Elixir?
         </h2>
-        <p class="text-justify pt-2 pb-1">
+        <p class="prose-p">
             What makes Elixir useful is the underlying Erlang runtime's "let it crash" philosophy, shared by all BEAM
-            languages,
-            where
-        <ul class="list-inside list-disc">
+            languages, where:
+        </p>
+        <ul class="prose-list">
             <li>everything is a process,</li>
             <li>processes are cheap,</li>
             <li>processes are isolated (no shared memory),</li>
-            <li>and processes can be restarted quickly by other (supervisor) processes, should they fail
-                for whatever
-                reason.</li>
+            <li>and processes can be restarted quickly by other (supervisor) processes, should they fail for whatever reason.</li>
         </ul>
-        </p>
-        <p class="text-justify pt-2 pb-1">
+        <p class="prose-p">
             The "let it crash" approach gives us a way to build systems that are fault tolerant, without the need to
-            resort
-            to
-            defensive coding. If a process fails, it fails, but it doesn't bring down the whole system.
+            resort to defensive coding. If a process fails, it fails, but it doesn't bring down the whole system.
         </p>
-        <p class="text-justify pt-2 pb-1">
-            Better still... by isolating sequential programs into independent processes, the Erlang runtime makes it
-            trivial
-            to
-            run code concurrently. So the code that was written to run on your own machine can also run efficiently on a
-            different machine with many more cores, without requiring any changes to your code.
+        <p class="prose-p">
+            Better still… by isolating sequential programs into independent processes, the Erlang runtime makes it
+            trivial to run code concurrently. So the code that was written to run on your own machine can also run
+            efficiently on a different machine with many more cores, without requiring any changes to your code.
         </p>
-        <p class="text-justify pt-2 pb-1">
+        <p class="prose-p">
             The same mechanisms for distributing work among CPU / GPU cores also helps make it relatively simple to
-            scale
-            Elixir applications among different machines, which may be running in very different geographic locations.
+            scale Elixir applications among different machines, which may be running in very different geographic locations.
         </p>
-        <p class="text-justify pt-2 pb-1">
+        <p class="prose-p">
             In this way, Elixir gives us a way to gradually turn simple programs, running locally, into large,
-            distributed
-            systems, without forcing us to change our mental models as we scale to bigger workloads.
+            distributed systems, without forcing us to change our mental models as we scale to bigger workloads.
         </p>
-        <p class="text-justify pt-2 pb-1">
-            Want to know more? Have a look below at <a class="text-violet-600 hover:text-violet-700 cursor:pointer"
+        <p class="prose-p mb-0">
+            Want to know more? Have a look below at <a class="link"
                 href="#learning-resources">some of our favourite talks / resources</a> to get some more context around
-            Elixir & Erlang, and to wrap your head around the underlying <em>"let it crash"</em> philosophy.
+            Elixir &amp; Erlang, and to wrap your head around the underlying <em>"let it crash"</em> philosophy.
         </p>
     </section>
 
-    <section id="getting-started" class="py-6 border-t border-gray-300">
-        <h2 class="text-2xl pb-2 italic">Get started with Elixir</h2>
-        <ul class="list-inside flex flex-col space-y-2">
+    <section id="getting-started" class="section">
+        <h2 class="section-title">Get started with Elixir</h2>
+        <ul class="flex flex-col space-y-5">
             <li>
-                Install Elixir:<br />
-                <a class="text-violet-600 hover:text-violet-700 cursor:pointer"
-                    href="https://elixir-lang.org/install.html" target="_blank"
-                    title="Install Elixir">https://elixir-lang.org/install.html</a>
+                <p class="font-semibold text-gray-900">Install Elixir</p>
+                <a class="link break-all" href="https://elixir-lang.org/install.html" target="_blank"
+                    title="Install Elixir">elixir-lang.org/install.html</a>
             </li>
             <li>
-                Getting started with Elixir (in your terminal):<br />
-                <a class="text-violet-600 hover:text-violet-700 cursor:pointer"
-                    href="https://elixir-lang.org/getting-started/introduction.html" target="_blank"
-                    title="Getting started with Elixir">https://elixir-lang.org/getting-started/introduction.html</a>
+                <p class="font-semibold text-gray-900">Getting started with Elixir <span class="font-normal text-gray-500">(in your terminal)</span></p>
+                <a class="link break-all" href="https://elixir-lang.org/getting-started/introduction.html" target="_blank"
+                    title="Getting started with Elixir">elixir-lang.org/getting-started</a>
             </li>
             <li>
-                Getting started with Phoenix (for web development):<br />
-                <a class="text-violet-600 hover:text-violet-700 cursor:pointer"
-                    href="https://hexdocs.pm/phoenix/overview.html" target="_blank"
-                    title="Phoenix Docs (Overview)">https://hexdocs.pm/phoenix/overview.html</a>
+                <p class="font-semibold text-gray-900">Getting started with Phoenix <span class="font-normal text-gray-500">(for web development)</span></p>
+                <a class="link break-all" href="https://hexdocs.pm/phoenix/overview.html" target="_blank"
+                    title="Phoenix Docs (Overview)">hexdocs.pm/phoenix</a>
             </li>
             <li>
-                Livebook (interactive notebooks, running in your browser):<br />
-                <a class="text-violet-600 hover:text-violet-700 cursor:pointer" href="https://livebook.dev"
-                    target="_blank" title="Livebook • Home Page">https://livebook.dev</a> & <a
-                    class="text-violet-600 hover:text-violet-700 cursor:pointer"
-                    href="https://www.youtube.com/watch?v=g3oyh3g1AtQ" target="_blank"
-                    title="José Valim • Bumblebee: GPT2, Stable Diffusion, and more in Elixir">this talk by José
-                    Valim</a>
-                where he shows how easy it is to run pretrained AI/ML models in Livebook.
+                <p class="font-semibold text-gray-900">Livebook <span class="font-normal text-gray-500">(interactive notebooks in your browser)</span></p>
+                <p class="text-gray-700">
+                    <a class="link" href="https://livebook.dev" target="_blank" title="Livebook • Home Page">livebook.dev</a>
+                    &amp;
+                    <a class="link" href="https://www.youtube.com/watch?v=g3oyh3g1AtQ" target="_blank"
+                        title="José Valim • Bumblebee: GPT2, Stable Diffusion, and more in Elixir">this talk by José Valim</a>
+                    where he shows how easy it is to run pretrained AI/ML models in Livebook.
+                </p>
             </li>
             <li>
-                Nerves (framework for building embedded systems with elixir):<br />
-                <a class="text-violet-600 hover:text-violet-700 cursor:pointer" href="https://nerves-project.org"
-                    target="_blank" title="Embedded Elixir with Nerves ">https://nerves-project.org</a> & <a
-                    class="text-violet-600 hover:text-violet-700 cursor:pointer"
-                    href="https://www.youtube.com/watch?v=mrpQHZcy3CI" target="_blank" title="Justin Schneck • Functional IoT with
-                Elixir and Nerves">this talk by Justin Schneck</a>.
+                <p class="font-semibold text-gray-900">Nerves <span class="font-normal text-gray-500">(embedded systems with Elixir)</span></p>
+                <p class="text-gray-700">
+                    <a class="link" href="https://nerves-project.org" target="_blank" title="Embedded Elixir with Nerves">nerves-project.org</a>
+                    &amp;
+                    <a class="link" href="https://www.youtube.com/watch?v=mrpQHZcy3CI" target="_blank"
+                        title="Justin Schneck • Functional IoT with Elixir and Nerves">this talk by Justin Schneck</a>.
+                </p>
             </li>
         </ul>
     </section>
 
-    <section id="getting-involved" class="py-6 border-t border-gray-300">
-        <h2 class="text-2xl pb-2 italic">How to get involved</h2>
-        <ul class="list-inside list-disc flex flex-col space-y-4">
-            <li><a class="text-violet-600 hover:text-violet-700 cursor:pointer" href="https://www.meetup.com/elixirza/"
+    <section id="getting-involved" class="section">
+        <h2 class="section-title">How to get involved</h2>
+        <ul class="prose-list space-y-3">
+            <li><a class="link font-medium" href="https://www.meetup.com/elixirza/"
                     target="_blank" title="Join our next Developer Meetup.">
                     Attend an event</a></li>
-            <li><a class="text-violet-600 hover:text-violet-700 cursor:pointer"
-                    href="https://forms.gle/PtmZMi2hxGcfTcL28" target="_blank" title="Submit a short talk proposal.">
+            <li><a class="link font-medium" href="https://forms.gle/PtmZMi2hxGcfTcL28" target="_blank"
+                    title="Submit a short talk proposal.">
                     Speak at an event</a></li>
-            <li><a class="text-violet-600 hover:text-violet-700 cursor:pointer"
+            <li><a class="link font-medium"
                     href="mailto:petrus.jvrensburg@gmail.com?subject=ElixirZA%20•%20Sponsorship">Sponsor an
                     event</a>
             </li>
-            <li><a class="text-violet-600 hover:text-violet-700 cursor:pointer"
+            <li><a class="link font-medium"
                     href="mailto:petrus.jvrensburg@gmail.com?subject=ElixirZA%20•%20How%20can%20I%20help?">Help organize
-                    /
-                    host an event</a></li>
+                    / host an event</a></li>
         </ul>
     </section>
 
-    <section id="upcoming-events" class="py-6 border-t border-gray-300">
-        <h2 class="text-2xl pb-2 italic">Upcoming events</h2>
-        <ul class="list-inside flex flex-col space-y-4">
+    <section id="upcoming-events" class="section">
+        <h2 class="section-title">Upcoming events</h2>
+        <ul class="flex flex-col space-y-4">
             {{- with hugo.Data.events.upcoming }}
             {{- range . }}
             {{ partial "event.html" . }}
             {{- end }}
             {{- else }}
-            <li>
-                <em>Nothing scheduled for the moment.</em>
+            <li class="meta italic">
+                Nothing scheduled for the moment.
             </li>
             {{- end }}
         </ul>
     </section>
 
 
-    <section id="learning-resources" class="py-6 border-t border-gray-300">
-        <h2 class="text-2xl italic">Learning Resources: Our all-time-favourites</h2>
-        <p class="text-justify">
-            Some of the resources we've found to be most helpful for wrapping your head around Erlang / Elixir / The
-            BEAM.
+    <section id="learning-resources" class="section">
+        <h2 class="section-title">Learning resources</h2>
+        <p class="section-lead">
+            Some of the resources we've found most helpful for wrapping your head around Erlang, Elixir, and the BEAM.
         </p>
 
-        <h3 class="text-xl pt-8 italic">Part 1: The Essentials</h3>
-        <p class="text-justify pb-3">Why are we even here?</p>
+        <h3 class="subsection-title pt-2">Part 1: The essentials</h3>
+        <p class="meta mb-6">Why are we even here?</p>
 
-        <ul class="list-inside flex flex-col space-y-4">
-            <li>
-                <h4 class="text-lg pt-4">Saša Jurić • The Soul of Erlang and Elixir</h4>
-                <p class="pb-2">
+        <ul class="flex flex-col space-y-12">
+            <li class="space-y-3">
+                <h4 class="resource-title">Saša Jurić • The Soul of Erlang and Elixir</h4>
+                <p class="prose-p mb-0">
                     In this seminal talk from 2019, Saša Jurić demonstrates in a practical way how message-passing
                     concurrency allows us to build rock-solid fault-tolerant systems, that can handle errors and crashes
                     that would have been very difficult, or impossible, to pre-empt in most other programming languages.
                 </p>
-                <a class="text-violet-600 hover:text-violet-700 cursor:pointer"
+                <a class="link text-sm font-medium"
                     href="https://www.youtube.com/watch?v=JvBT4XBdoUE"
-                    target="_blank">https://www.youtube.com/watch?v=JvBT4XBdoUE</a>
-                <iframe class="w-full aspect-video md:px-2 pt-2"
+                    target="_blank">Watch on YouTube</a>
+                <iframe class="w-full aspect-video mt-2"
                     src="https://www.youtube.com/embed/JvBT4XBdoUE"
                     title="Saša Jurić • The Soul of Erlang and Elixir"
                     loading="lazy"
@@ -197,17 +186,17 @@
                     referrerpolicy="strict-origin-when-cross-origin"
                     allowfullscreen></iframe>
             </li>
-            <li>
-                <h4 class="text-lg pt-4">Elixir: The Documentary</h4>
-                <p class="pb-2">
-                    José Valim explains what initially brought him to create Elixir on top of the Erlang Virtaul Machine
-                    (the BEAM), which he started working on in 2012. He shows how it can be used to create a
+            <li class="space-y-3">
+                <h4 class="resource-title">Elixir: The Documentary</h4>
+                <p class="prose-p mb-0">
+                    José Valim explains what initially brought him to create Elixir on top of the Erlang Virtual Machine
+                    (the BEAM), which he started working on in 2012. He shows how it can be used to create
                     fault-tolerant, distributed systems, without much of the complexity that one might have expected.
                 </p>
-                <a class="text-violet-600 hover:text-violet-700 cursor:pointer"
+                <a class="link text-sm font-medium"
                     href="https://www.youtube.com/watch?v=lxYFOM3UJzo"
-                    target="_blank">https://www.youtube.com/watch?v=lxYFOM3UJzo</a>
-                <iframe class="w-full aspect-video md:px-2 pt-2"
+                    target="_blank">Watch on YouTube</a>
+                <iframe class="w-full aspect-video mt-2"
                     src="https://www.youtube.com/embed/lxYFOM3UJzo"
                     title="Elixir: The Documentary"
                     loading="lazy"
@@ -215,18 +204,17 @@
                     referrerpolicy="strict-origin-when-cross-origin"
                     allowfullscreen></iframe>
             </li>
-            <li>
-                <h4 class="text-lg pt-4">Erlang: The Movie</h4>
-                <p class="pb-2">
-                    This vintage promotional video, from the 1980's, from Ericsson's Computer Science Laboratory,
-                    introduces Erlang for
-                    the first time. Joe Armstrong, Mike Williams and Robert Virding demonstrates its use for routing
-                    landline phone calls and handling the errors that may be expected to occur.
+            <li class="space-y-3">
+                <h4 class="resource-title">Erlang: The Movie</h4>
+                <p class="prose-p mb-0">
+                    This vintage promotional video from the 1980s, from Ericsson's Computer Science Laboratory,
+                    introduces Erlang for the first time. Joe Armstrong, Mike Williams and Robert Virding demonstrate
+                    its use for routing landline phone calls and handling the errors that may be expected to occur.
                 </p>
-                <a class="text-violet-600 hover:text-violet-700 cursor:pointer"
+                <a class="link text-sm font-medium"
                     href="https://www.youtube.com/watch?v=xrIjfIjssLE"
-                    target="_blank">https://www.youtube.com/watch?v=xrIjfIjssLE</a>
-                <iframe class="w-full aspect-video md:px-2 pt-2"
+                    target="_blank">Watch on YouTube</a>
+                <iframe class="w-full aspect-video mt-2"
                     src="https://www.youtube.com/embed/xrIjfIjssLE"
                     title="Erlang: The Movie"
                     loading="lazy"
@@ -236,22 +224,21 @@
             </li>
         </ul>
 
-        <h3 class="text-xl pt-8 italic">Part 2: Deeper cuts</h3>
-        <p class="text-justify pb-3">Take your time to geek out on some of the finer implications of message-passing
-            concurrency.</p>
+        <h3 class="subsection-title">Part 2: Deeper cuts</h3>
+        <p class="meta mb-6">Take your time to geek out on some of the finer implications of message-passing concurrency.</p>
 
-        <ul class="list-inside flex flex-col space-y-4">
-            <li>
-                <h4 class="text-lg pt-4">Francesco Cesarini • Erlang Programming Language</h4>
-                <p class="pb-2">
-                    In this short & approachable talk Francesco gives an eloquent overview of the history and core ideas
+        <ul class="flex flex-col space-y-12">
+            <li class="space-y-3">
+                <h4 class="resource-title">Francesco Cesarini • Erlang Programming Language</h4>
+                <p class="prose-p mb-0">
+                    In this short &amp; approachable talk Francesco gives an eloquent overview of the history and core ideas
                     behind the development of Erlang.
                 </p>
-                <a class="text-violet-600 hover:text-violet-700 cursor:pointer"
+                <a class="link text-sm font-medium"
                     href="https://www.youtube.com/watch?v=SOqQVoVai6s"
-                    target="_blank">https://www.youtube.com/watch?v=SOqQVoVai6s</a>
+                    target="_blank">Watch on YouTube</a>
 
-                <iframe class="w-full aspect-video md:px-2 pt-2"
+                <iframe class="w-full aspect-video mt-2"
                     src="https://www.youtube.com/embed/SOqQVoVai6s"
                     title="Francesco Cesarini • Erlang Programming Language"
                     loading="lazy"
@@ -259,19 +246,19 @@
                     referrerpolicy="strict-origin-when-cross-origin"
                     allowfullscreen></iframe>
             </li>
-            <li>
-                <h4 class="text-lg pt-4">Joe Armstrong • The Do's and Don'ts of Error Handling</h4>
-                <p class="pb-2">
+            <li class="space-y-3">
+                <h4 class="resource-title">Joe Armstrong • The Do's and Don'ts of Error Handling</h4>
+                <p class="prose-p mb-0">
                     In this classic talk from 2018, Joe Armstrong discusses the problem of writing fault tolerant
                     software, giving a short overview of his own involvement in writing Erlang. He discusses the
                     implications of message-passing concurrency and the elegant architectural design solution of just
                     letting things crash (when they are running in independent processes) to make it easy to reason
                     about errors and their implications in our code.
                 </p>
-                <a class="my-2 text-violet-600 hover:text-violet-700 cursor:pointer"
+                <a class="link text-sm font-medium"
                     href="https://www.youtube.com/watch?v=TTM_b7EJg5E"
-                    target="_blank">https://www.youtube.com/watch?v=TTM_b7EJg5E</a>
-                <iframe class="w-full aspect-video md:px-2 pt-2"
+                    target="_blank">Watch on YouTube</a>
+                <iframe class="w-full aspect-video mt-2"
                     src="https://www.youtube.com/embed/TTM_b7EJg5E"
                     title="Joe Armstrong • The Do's and Don'ts of Error Handling"
                     loading="lazy"
@@ -279,34 +266,34 @@
                     referrerpolicy="strict-origin-when-cross-origin"
                     allowfullscreen></iframe>
             </li>
-            <li>
-                <h4 class="text-lg pt-4">Joe Armstrong's PhD thesis</h4>
-                <p class="pb-2">
+            <li class="space-y-3">
+                <h4 class="resource-title">Joe Armstrong's PhD thesis</h4>
+                <p class="prose-p mb-0">
                     Written late in his career, this 2003 thesis can be seen as Joe Armstrong's treatise on the problem
-                    of Fault-tolerant Computing. He goes to great lengths to
+                    of fault-tolerant computing. He goes to great lengths to
                     discuss the historical context within which Erlang originated, the architectural philosophy behind
-                    it, as well as the nut-and-bolts details of the resulting implementation.
+                    it, as well as the nuts-and-bolts details of the resulting implementation.
                 </p>
-                <a class="my-2 text-violet-600 hover:text-violet-700 cursor:pointer"
+                <a class="link text-sm font-medium"
                     href="https://erlang.org/download/armstrong_thesis_2003.pdf" target="_blank"
                     title="Making reliable distributed systems in the presence of software errors">
-                    https://erlang.org/download/armstrong_thesis_2003.pdf</a>
-                <a class="cursor:pointer" href="https://erlang.org/download/armstrong_thesis_2003.pdf" target="_blank"
+                    Read the PDF</a>
+                <a class="block pt-2" href="https://erlang.org/download/armstrong_thesis_2003.pdf" target="_blank"
                     title="Making reliable distributed systems in the presence of software errors">
-                    <img class="mx-auto max-w-xs md:px-2 pt-2" src="/images/joe-armstrong-phd-cover.png"
+                    <img class="mx-auto max-w-xs" src="/images/joe-armstrong-phd-cover.png"
                         alt="Joe Armstrong • Making reliable distributed systems in the presence of software errors" /></a>
             </li>
-            <li>
-                <h4 class="text-lg pt-4">Robert Virding • Hitchhiker's Tour of the BEAM</h4>
-                <p class="pb-2">
+            <li class="space-y-3">
+                <h4 class="resource-title">Robert Virding • Hitchhiker's Tour of the BEAM</h4>
+                <p class="prose-p mb-0">
                     One of the creators of Erlang gives an easily digestible overview of the BEAM (the Erlang runtime),
                     aimed at developers and system architects. He discusses the main features and highlights the most
                     common pitfalls one can expect to encounter when running applications on the BEAM.
                 </p>
-                <a class="my-2 text-violet-600 hover:text-violet-700 cursor:pointer"
+                <a class="link text-sm font-medium"
                     href="https://www.youtube.com/watch?v=_Pwlvy3zz9M"
-                    target="_blank">https://www.youtube.com/watch?v=_Pwlvy3zz9M</a>
-                <iframe class="w-full aspect-video md:px-2 pt-2"
+                    target="_blank">Watch on YouTube</a>
+                <iframe class="w-full aspect-video mt-2"
                     src="https://www.youtube.com/embed/_Pwlvy3zz9M"
                     title="Robert Virding • Hitchhiker's Tour of the BEAM"
                     loading="lazy"
@@ -317,41 +304,40 @@
         </ul>
     </section>
 
-    <section class="mt-24 border-t border-gray-300">
-        <p class="md:py-24 py-12 md:px-24 md:text-center text-justify">
-            “Make it work, then make it beautiful, then if you really, really have to, make it fast. 90 percent of the
-            time, if
-            you make it beautiful, it will already be fast. So really, just make it beautiful!”<br /> <span
-                class="italic">- Joe Armstrong</span>
-        </p>
+    <section class="section">
+        <blockquote class="mx-auto max-w-2xl text-xl leading-relaxed text-gray-700 md:text-center">
+            <p>
+                “Make it work, then make it beautiful, then if you really, really have to, make it fast. 90 percent of the
+                time, if you make it beautiful, it will already be fast. So really, just make it beautiful!”
+            </p>
+            <footer class="meta mt-4 not-italic md:text-center">— Joe Armstrong</footer>
+        </blockquote>
     </section>
 
-    <footer class="md:py-12 py-6 md:px-12 border-t border-gray-300">
-        <p class="mb-8 w-full text-center">Made with ❤️ in Cape Town, <nobr>South Africa 🇿🇦</nobr> · <a
-                class="text-violet-600 hover:text-violet-700 cursor:pointer"
+    <footer class="section text-center">
+        <p class="mb-8 text-gray-600">Made with ❤️ in Cape Town, <nobr>South Africa 🇿🇦</nobr> · <a
+                class="link"
                 href="https://github.com/petrus-jvrensburg/elixirza" target="_blank" title="Edit on Github">
                 <nobr>Edit on Github</nobr>
             </a></p>
-        <p class="leading-8 w-full text-center">Special shoutout to <a
-                class="bg-gray-300 rounded-lg py-1 px-2 text-violet-600 hover:text-violet-700 cursor:pointer"
+        <p class="leading-8 text-gray-600">Special shoutout to <a
+                class="rounded-md bg-gray-100 px-2 py-1 link"
                 href="https://elixirconf.africa" target="_blank" title="Africa's premier (only) Elixir conference">
-                <nobr>https://elixirconf.africa</nobr>
+                <nobr>elixirconf.africa</nobr>
             </a>,
-            <a class="bg-gray-300 rounded-lg py-1 px-2 text-violet-600 hover:text-violet-700 cursor:pointer"
+            <a class="rounded-md bg-gray-100 px-2 py-1 link"
                 href="https://elixircards.co.uk" target="_blank" title="Flashcards for learning Elixir">
                 <nobr>Elixir Cards</nobr>
             </a>,
-            <a class="bg-gray-300 rounded-lg py-1 px-2 text-violet-600 hover:text-violet-700 cursor:pointer"
+            <a class="rounded-md bg-gray-100 px-2 py-1 link"
                 href="https://pragprog.com/categories/elixir-phoenix-and-otp/" target="_blank"
                 title="The Pragmatic Bookshelf • Publisher of several books related to Erlang & Elixir.">
                 <nobr>The Pragmatic Bookshelf</nobr>
             </a> and
-            <a class="bg-gray-300 rounded-lg py-1 px-2 text-violet-600 hover:text-violet-700 cursor:pointer"
+            <a class="rounded-md bg-gray-100 px-2 py-1 link"
                 href="https://pragmaticstudio.com" target="_blank"
                 title="Pragmatic Studio • Publisher of video courses related to Erlang & Elixir.">
                 <nobr>The Pragmatic Studio</nobr>
             </a>.
         </p>
     </footer>
-</body>
-

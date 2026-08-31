@@ -63,7 +63,7 @@ past:
   - title: "March Erlang & Elixir Meetup • Talk Title"
     date: "Tuesday, March 3, 2026 19:00 (GMT+2)"
     url: "https://www.meetup.com/elixirza/events/..."
-    image: "/images/speakers/thumbs/speaker-name.png"  # optional
+    image: "/images/speakers/speaker-name.png"  # optional
     youtube: "https://youtu.be/..."                    # optional "Watch on YouTube" link
     description: >-
       Short summary with optional <a href="..." target="_blank" class="text-violet-600 hover:text-violet-700 cursor:pointer">HTML links</a>.
@@ -76,4 +76,4 @@ past:
 
 For upcoming events, add entries under `upcoming` in the same file (same shape). Leave `upcoming: []` to show the default “nothing scheduled” message.
 
-Speaker thumbnails go in `static/images/speakers/thumbs/`.
+Speaker images go in `static/images/speakers/`.
